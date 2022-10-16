@@ -1,0 +1,39 @@
+{
+  "title": "Professional Experience",
+  "timeline": [
+    {
+      "duration": "June 2021 - Present",
+      "title": "Software Engineer, Associate",
+      "place": "Hitachi Vantara",
+      "description": "Conduct Work in developing cross-platform mobile applications (iOS and Android) as well as Backend applications. \n\nWe mainly develop using Agile over two-week sprints.",
+      "tags": [
+        "Ionic",
+        "Angular",
+        "Node.js",
+        "npm",
+        "Git",
+        "Bitbucket",
+        "GitHub",
+        "Agile",
+        "Laravel",
+        "Express.js",
+        "Azure",
+        "Cosmos DB",
+        "JavaScript",
+        "TypeScript"
+      ]
+    },
+    {
+      "duration": "February 2021 - May 2021",
+      "title": "Project Intern",
+      "place": "Hitachi Vantara",
+      "description": "I worked in a team of students focussing on projects centred around applications development, robotics, machine learning and designing courses to teach other students about these applications of technology.",
+      "tags": [
+        "Python",
+        "Linux",
+        "Angular",
+        "Ionic"
+      ]
+    }
+  ]
+}

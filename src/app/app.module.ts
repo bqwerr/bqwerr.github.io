@@ -3,24 +3,43 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { LoginComponent } from './login/login.component';
+import { HeaderComponent } from './pages/common/header/header.component';
+import { LoginComponent } from './pages/common/login/login.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PageNotFoundComponent } from './pages/common/page-not-found/page-not-found.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DataApiService } from './services/http/data-api.service';
+import { CommonModule } from '@angular/common'; // do not remove this
+import { TimeLineComponent } from './pages/common/timeline/timeline.component';
+import { EducationComponent } from './pages/education/education.component';
+import { ExperienceComponent } from './pages/experience/experience.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
-    HomepageComponent,
+    LoginComponent,
+    PageNotFoundComponent, 
+    HomeComponent,
+    TimeLineComponent,
+    EducationComponent,
+    ExperienceComponent,
+    AboutComponent,
+    ProjectsComponent,
     LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    IonicModule.forRoot(),
   ],
-  providers: [],
+  providers: [
+    DataApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

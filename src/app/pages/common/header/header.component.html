@@ -1,0 +1,25 @@
+<header>
+    <nav class="navbar navbar-expand-sm navbar-dark text-white bg-black navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-translate">
+                <span class="mt-auto h5" routerLink="/" rel="tooltip">
+                    <div [ngClass]="{'navbar-active': isActive('/')}">
+                        Home
+                    </div>
+                </span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                    aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                <ul class="navbar-nav mt-auto text-white">
+                    <li class="nav-link" *ngFor="let item of headerItems" style="cursor: pointer;">
+                        <span class="smooth-scroll" 
+                        [ngClass]="{'navbar-active': isActive('/' + item.toLowerCase())}"
+                        [routerLink]="'/'+item.toLowerCase()">{{item}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

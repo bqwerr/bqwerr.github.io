@@ -1,0 +1,32 @@
+{
+  "skills": [
+    {
+      "title": "Backend",
+      "tags": [
+        "Java",
+        "Python",
+        "SQL",
+        "Spring Boot",
+        "JSP & Servlets",
+        "Django Framework",
+        "Django Rest Framework"
+      ]
+    },
+    {
+      "title": "Frontend",
+      "tags": [
+        "React JS",
+        "Angular",
+        "SAPUI5"
+      ]
+    },
+    {
+      "title": "Tools",
+      "tags": [
+        "Git",
+        "Heroku Cloud Platform",
+        "SAP Cloud Platform"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "preview": "assets/media/projects/portfolio.png",
+      "icon": "./assets/images/project-1.jpg",
+      "title": "This Portfolio Web Application",
+      "description": "I designed the code architecture for this portfolio website and built it from ground up using Angular Framework , \n\nI open sourced the code and uploaded it to github so that other people can use it for their portfolios. \n\nURL is https://github.com/ronald-hove/Angular-Portfolio-Template",
+      "tags": ["Machine Learning", "Full Stack - Web", "Backend"]
+    },
+    {
+      "preview": "assets/media/projects/villa.png",
+      "title": "Villa Hout Bay Heights Guest House Website",
+      "icon": "./assets/images/project-1.jpg",
+      "tags": ["Backend", "Standalone"],
+      "description": "I worked on this website from ground up using Angular Framework , Firebase as well as a SQL backend \n\nThe site is a guest house booking site to place booking enquiries \n\nURL is http://houtbayheights.co.za/"
+    },
+    {
+      "preview": "assets/media/projects/road-side.png",
+      "tags": ["Frontend"],
+      "title": "Built a Hybrid RoadSide Assistance App In Ionic ",
+      "icon": "./assets/images/project-1.jpg",
+      "description": "I explain How the app works in my linkedIn Post here \n\nhttps://www.linkedin.com/feed/update/urn:li:activity:6400653831994245120"
+    },
+    {
+      "preview": "assets/media/projects/magento-ionic.png",
+      "tags": ["Data Science", "Machine Learning"],
+      "title": "Built a cross platform ionic mobile shopping sing Magento's Restful API",
+      "icon": "./assets/images/project-1.jpg",
+      "description": "Built an ionic app that connected to magento's restful API without the need for a bridge sitting on the server (Probably will need  to build one to access some higher privileged resources) \n\nI have more screenshots of it in my LinkedIn Post Here \nhttps://www.linkedin.com/feed/update/urn:li:activity:6418818145552867328"
+    },
+    {
+      "preview": "assets/media/projects/pb.PNG",
+      "tags": ["Mobile Application"],
+      "title": "Peebee Mobile Apps",
+      "icon": "./assets/images/project-1.jpg",
+      "description": "Built a cross platform hybrid app that connects members of the general public with fitness trainers on demand\n\nIn Addition to the Client application, I was involved in building the Peebee for Trainers Mobile App\n\nAndroid \nhttps://play.google.com/store/apps/details?id=app.peebee.customer\u0026hl=en_ZA \n\nIOS \nhttps://apps.apple.com/us/app/peebee/id1441425142"
+    },
+    {
+      "preview": "assets/media/projects/ionic-custom-form-builder.png",
+      "tags": ["Open Source"],
+      "icon": "./assets/images/project-1.jpg",
+      "title": "Open Source Form Builder Library for Ionic 4",
+      "description": "I worked on a custom library for building ionic 4 forms that I have published on npm, It managed to get a star from one of the core ionic team developers on github.\n\nYou can have a look at it on github \n\nhttps://github.com/ronald-hove/ion-custom-form-builder"
+    }
+  ]
+}
