@@ -16,20 +16,22 @@ import { ExperienceComponent } from './pages/experience/experience.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { IonicModule } from '@ionic/angular';
+import { PopUpComponent } from './pages/common/pop-up/pop-up.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LoginComponent,
-    PageNotFoundComponent, 
+    PageNotFoundComponent,
     HomeComponent,
     TimeLineComponent,
     EducationComponent,
     ExperienceComponent,
     AboutComponent,
     ProjectsComponent,
-    LoginComponent
+    LoginComponent,
+    PopUpComponent
   ],
   imports: [
     BrowserModule,

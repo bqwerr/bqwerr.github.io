@@ -11,6 +11,7 @@ export class ProjectsComponent implements OnInit {
 
   projects: any;
   activeProjectsTab: string = "All";
+  activeProject: any = null;
   readonly categories: Array<string> = ['All', 'Backend', "Machine Learning", "Full Stack"]
 
   constructor(
@@ -44,6 +45,14 @@ export class ProjectsComponent implements OnInit {
       }
       return false;
     });
+  }
+
+  showProjectDetails(project: any) {
+    this.activeProject = project;
+  }
+
+  hideProjectDetails() {
+    this.activeProject = null;
   }
 
 }
