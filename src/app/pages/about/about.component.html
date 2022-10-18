@@ -1,91 +1,36 @@
 <br />
-<ion-card>
+<ion-card style="height: 90%;">
     <ion-card-content>
-        <aside class="sidebar active">
-            <div class="row">
-                <div class="sidebar-info">
-                    
-                    <figure class="avatar-box">
-                        <img src="./assets/images/my-avatar.png" alt="Srujan Tumma" >
-                    </figure>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-3">
 
-                    <div class="info-content">
-                        <h1 class="name text-dark" title="Srujan Tumma">Srujan Tumma</h1>
-                        <p>Software Engineer Associate at Hitachi Vantara</p>
-                    </div>
+                    <h1 class="avatar-box">
+                        <img src="./assets/images/my-avatar.png" alt="Srujan Tumma">
+                    </h1>
 
-                    <button class="info_more-btn">
-                        <span>Show Contacts</span>
-                        <ion-icon name="chevron-down"></ion-icon>
-                    </button>
-                
+                </div>
+                <div class="col-8">
+                    <h1 class="text-dark pb-2" title="Srujan Tumma">Srujan Tumma</h1>
+                    <p>Software Engineering Associate at Hitachi Vantara</p>
                 </div>
             </div>
-            <div class="sidebar-info_more">
-
-                <div class="separator"></div>
-
+            <div class="separator"></div>
+            <div>
                 <ul class="contacts-list">
 
-                    <li class="contact-item">
+                    <li class="contact-item" *ngFor="let social of profile?.socials">
 
                         <div class="icon-box">
-                            <ion-icon name="mail-outline"></ion-icon>
+                            <a>
+                                <ion-icon [name]="social?.icon"></ion-icon>
+                            </a>
                         </div>
-
-                        <div class="contact-info">
-                            <p class="contact-title">Email</p>
-
-                            <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
-                        </div>
-
-                    </li>
-
-                    <li class="contact-item">
-
-                        <div class="icon-box">
-                            <ion-icon name="phone-portrait-outline"></ion-icon>
-                        </div>
-
-                        <div class="contact-info">
-                            <p class="contact-title">Phone</p>
-
-                            <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
-                        </div>
-
-                    </li>
-
-                    <li class="contact-item">
-
-                        <div class="icon-box">
-                            <ion-icon name="calendar-outline"></ion-icon>
-                        </div>
-
-                        <div class="contact-info">
-                            <p class="contact-title">Birthday</p>
-
-                            <time datetime="1982-06-23">June 23, 1982</time>
-                        </div>
-
-                    </li>
-
-                    <li class="contact-item">
-
-                        <div class="icon-box">
-                            <ion-icon name="location-outline"></ion-icon>
-                        </div>
-
-                        <div class="contact-info">
-                            <p class="contact-title">Location</p>
-
-                            <address>Sacramento, California, USA</address>
-                        </div>
-
                     </li>
 
                 </ul>
 
-                <div class="separator"></div>
+                <!-- <div class="separator"></div>
 
                 <ul class="social-list">
 
@@ -107,11 +52,17 @@
                         </a>
                     </li>
 
-                </ul>
+                </ul> -->
 
             </div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <!-- <div class="col">
+                <iframe width="200%" height="200%" frameBorder="0"
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=bqwerr&layout=compact&langs_count=10"></iframe>
+            </div> -->
 
-        </aside>
+        </div>
 
     </ion-card-content>
 </ion-card>

@@ -41,11 +41,11 @@
               <div class="card-body" >
                 <div class="container" >
                   <div class="row pb-2">
-                    <div class="col-6">
+                    <!-- <div class="col-lg-6 col-12">
                       <iframe width="100%" height="110%" frameBorder="0"
                         src="https://github-readme-stats.vercel.app/api/top-langs/?username=bqwerr&layout=compact&langs_count=10"></iframe>
-                    </div>
-                    <div class="col-6" >
+                    </div> -->
+                    <div class="col-12">
                       <ng-container *ngFor="let category of getActiveCategory()">
                         <a class="mr-1 rh-skill" *ngFor="let skill of category?.tags">{{skill}}</a>
                       </ng-container>
