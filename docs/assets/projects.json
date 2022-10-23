@@ -1,46 +1,110 @@
 {
   "projects": [
     {
-      "preview": "assets/media/projects/portfolio.png",
       "icon": "./assets/images/project-1.jpg",
-      "title": "This Portfolio Web Application",
-      "description": "I designed the code architecture for this portfolio website and built it from ground up using Angular Framework , \n\nI open sourced the code and uploaded it to github so that other people can use it for their portfolios. \n\nURL is https://github.com/ronald-hove/Angular-Portfolio-Template",
-      "tags": ["Machine Learning", "Full Stack - Web", "Backend"]
+      "title": "Virtual Police Platform",
+      "duration": "",
+      "tags": ["Full Stack Web Application", "SQLite", "Backend", "Django Web Framework", "Python"],
+      "readme": "https://bqwerr.github.io/city-desk",
+      "repository": "https://github.com/bqwerr/city-desk",
+      "description": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididtconsectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
+      "items": [
+        "Citizen can raise Compliants, NOC Requests, Appointment Requests",
+        "Police can view latest requests in the dashboard",
+        "Custom User model has been implemented for citizen",
+        "Decorators are used for role based views",
+        "Used django built-in authentication system for login, logout, sign-up and password reset"
+      ],
+      "demo": "http://citydesk.herokuapp.com/"
     },
     {
-      "preview": "assets/media/projects/villa.png",
-      "title": "Villa Hout Bay Heights Guest House Website",
+      
+      "title": "To-Do List Application",
       "icon": "./assets/images/project-1.jpg",
-      "tags": ["Backend", "Standalone"],
-      "description": "I worked on this website from ground up using Angular Framework , Firebase as well as a SQL backend \n\nThe site is a guest house booking site to place booking enquiries \n\nURL is http://houtbayheights.co.za/"
+      "tags": ["Django Web Framework", "Full Stack Web Application", "Python"],
+      "description": "A user specific to-do list application built using Django Web Application framework. ",
+      "readme": "https://bqwerr.github.io/to-do-list",
+      "repository": "https://github.com/bqwerr/to-do-list",
+      "duration": "June 2020",
+      "items": [""],
+      "demo": ""
     },
     {
-      "preview": "assets/media/projects/road-side.png",
-      "tags": ["Frontend"],
-      "title": "Built a Hybrid RoadSide Assistance App In Ionic ",
+      
+      "tags": ["ReactJS", "Full Stack Web Application"],
+      "title": "Travel-Permissions Management Portal",
       "icon": "./assets/images/project-1.jpg",
-      "description": "I explain How the app works in my linkedIn Post here \n\nhttps://www.linkedin.com/feed/update/urn:li:activity:6400653831994245120"
+      "description": "",
+      "readme": "https://bqwerr.github.io/react-epass-portal",
+      "repository": "https://github.com/bqwerr/react-epass-portal",
+      "duration": "August 2020",
+      "items": [
+        "Modified frontend components for Forms and Dashboard using React-Bootstrap.",
+        "Developed Java backend API with endpoints for authentication, permissions, users, and admin scenarios.",
+        "Enabled JWT token based authentication mechanism to secure access to the endpoints."
+      ],
+      "demo": "http://epass-portal.herokuapp.com/"
     },
     {
-      "preview": "assets/media/projects/magento-ionic.png",
-      "tags": ["Data Science", "Machine Learning"],
-      "title": "Built a cross platform ionic mobile shopping sing Magento's Restful API",
+    
+      "tags": ["Backend", "Spring Boot", "Java", "PostgreSQL"],
+      "title": "Travel Management Service",
       "icon": "./assets/images/project-1.jpg",
-      "description": "Built an ionic app that connected to magento's restful API without the need for a bridge sitting on the server (Probably will need  to build one to access some higher privileged resources) \n\nI have more screenshots of it in my LinkedIn Post Here \nhttps://www.linkedin.com/feed/update/urn:li:activity:6418818145552867328"
+      "description": "",
+      "readme": "https://bqwerr.github.io/spring-epass-service",
+      "repository": "https://github.com/bqwerr/spring-epass-service",
+      "duration": "August 2020",
+      "items": [
+        "Modified frontend components for Forms and Dashboard using React-Bootstrap.",
+        "Developed Java backend API with endpoints for authentication, permissions, users, and admin scenarios.",
+        "Enabled JWT token based authentication mechanism to secure access to the endpoints."
+      ],
+      "demo": "http://epass-service.herokuapp.com/api/posts/all"
     },
     {
-      "preview": "assets/media/projects/pb.PNG",
-      "tags": ["Mobile Application"],
-      "title": "Peebee Mobile Apps",
+     
+      "tags": ["Full Stack Web Application", "Angular", "TypeScript"],
+      "title": "Portfolio Website",
       "icon": "./assets/images/project-1.jpg",
-      "description": "Built a cross platform hybrid app that connects members of the general public with fitness trainers on demand\n\nIn Addition to the Client application, I was involved in building the Peebee for Trainers Mobile App\n\nAndroid \nhttps://play.google.com/store/apps/details?id=app.peebee.customer\u0026hl=en_ZA \n\nIOS \nhttps://apps.apple.com/us/app/peebee/id1441425142"
+      "description": "",
+      "readme": "https://bqwerr.github.io/",
+      "duration": "October 2022",
+      "items": [""],
+      "demo": "https://bqwerr.github.io"
     },
     {
-      "preview": "assets/media/projects/ionic-custom-form-builder.png",
-      "tags": ["Open Source"],
+      
+      "tags": ["Machine Learning", "Full Stack Web Application", "Python", "SQLite"],
       "icon": "./assets/images/project-1.jpg",
-      "title": "Open Source Form Builder Library for Ionic 4",
-      "description": "I worked on a custom library for building ionic 4 forms that I have published on npm, It managed to get a star from one of the core ionic team developers on github.\n\nYou can have a look at it on github \n\nhttps://github.com/ronald-hove/ion-custom-form-builder"
+      "title": "Image Retrieval System",
+      "description": "",
+      "readme": "https://bqwerr.github.io/face_recog",
+      "repository": "https://github.com/bqwerr/face_recog",
+      "duration": "February 2021",
+      "items": [
+        "Built a content based Image retrieval system for Police to get criminal records of suspects.",
+        "Implemented KNN Algorithm to match the suspect image to the actual criminal record over a database",
+        "Developed an endpoint to accept image frames and provide inputs to the trained mode",
+        "'Deployed the endpoint using Heroku PaaS to interact using HTTP requests."
+      ],
+      "demo": ""
+    },
+    {
+      
+      "tags": ["Backend", "Frontend", "Machine Learning", "Full Stack Web Application", "Python", "SQLite", "Django-Rest Framework", "ReactJS", "ChatBot"],
+      "icon": "./assets/images/project-1.jpg",
+      "title": "Crime Awareness ChatBot",
+      "description": "",
+      "readme": "https://bqwerr.github.io/Crime-Awareness-Bot",
+      "repository": "https://github.com/bqwerr/Crime-Awareness-Bot",
+      "duration": "May 2021",
+      "items": [
+        "Collected & pre-processed crime related data using NLTK for training a Neural Network model.",
+        "Applied Intent Classification Algorithm to understand the actual intent of user query.",
+        "Integrated the ChatBot on Telegram using provided API’s."
+      ],
+      "demo": "http://pure-falls-99447.herokuapp.com/"
     }
+
   ]
 }

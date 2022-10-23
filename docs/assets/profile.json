@@ -20,6 +20,16 @@
       "name": "LinkedIn",
       "link": "https://www.linkedin.com/in/srujan-tumma/",
       "icon": "logo-linkedin"
+    }, 
+    {
+      "name": "Leetcode",
+      "link": "https://leetcode.com/LazY_KnIghT/",
+      "icon": "code-slash-sharp"
+    }, 
+    {
+      "name": "Resume",
+      "link": "/assets/media/documents/Srujan-Tumma.pdf",
+      "icon": "document-sharp"
     }
   ]
 }

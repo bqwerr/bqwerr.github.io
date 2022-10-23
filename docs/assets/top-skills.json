@@ -27,6 +27,17 @@
         "Heroku Cloud Platform",
         "SAP Cloud Platform"
       ]
+    },
+    {
+      "title": "Coursework",
+      "tags": [
+        "Data Structures",
+        "Algorithms",
+        "Object-Oriented Programming",
+        "Web Technologies",
+        "Operating Systems",
+        "Database Systems"
+      ]
     }
   ]
 }
