@@ -1022,6 +1022,8 @@ article {
   height: 5px;
 }
 
+
+
 .icon-box {
   width: 48px;
   height: 48px;
@@ -1205,10 +1207,6 @@ article { width: 700px; }
 
 /* testimonials modal */
 
-.testimonials-modal {
-  gap: 35px;
-  max-width: 680px;
-}
 
 
 

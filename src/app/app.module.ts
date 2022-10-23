@@ -17,6 +17,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { IonicModule } from '@ionic/angular';
 import { PopUpComponent } from './pages/common/pop-up/pop-up.component';
+import { SafePipe } from './pipes/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PopUpComponent } from './pages/common/pop-up/pop-up.component';
     AboutComponent,
     ProjectsComponent,
     LoginComponent,
-    PopUpComponent
+    PopUpComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,

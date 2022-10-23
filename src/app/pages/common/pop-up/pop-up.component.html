@@ -12,28 +12,35 @@
       <ion-icon name="close-outline"></ion-icon>
     </button>
 
-    <div class="modal-img-wrapper">
-      <figure class="modal-avatar-box">
-        <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-      </figure>
-
-      <img src="./assets/images/icon-quote.svg" alt="quote icon">
-    </div>
 
     <div class="modal-content">
 
-      <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+      <div class="row">
+        <div class="col-8">
+          <a [href]="project?.readme" *ngIf="project?.readme.length > 0">
+            <h4 class="h4">{{ project?.title }}</h4>
+          </a>
+        </div>
+        <div class="col ">14 June, 2021</div>
+      </div>
 
-      <time datetime="2021-06-14">14 June, 2021</time>
-
-      <div data-modal-text>
+      <div>
+        <br />
         <p>
-          Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-          lot of experience
-          and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-          consectetur adipiscing
-          elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+          {{project?.description}}
         </p>
+        <br />
+        <ul>
+          <li *ngFor="let item of project?.items">
+            {{item}}
+          </li>
+        </ul>
+        <br />
+        <strong>
+          <h5>Technologies Used</h5>
+        </strong>
+        <a class="mr-1 rh-skill" *ngFor="let tag of project?.tags">{{tag}}</a>
+        <br />
       </div>
 
     </div>

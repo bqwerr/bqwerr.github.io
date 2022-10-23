@@ -8,17 +8,19 @@ import { DataApiService } from 'src/app/services/http/data-api.service';
 
     <br />
     <div class="container">
-      <div class="row pt-1">
-        <div class="col-lg-4">
+      <div class="row ">
+        <div class="col-4">
           <app-about></app-about>
         </div>
         <div class="col-8">
+        <div class="container">
           <div class="row mt-3">
             <div class="col-11 offset-1 pl-2">
               <app-timeline [details] = education [icon] = bookIcon></app-timeline>
             </div>
           </div>
         </div>
+       </div>
     </div>
         
     `,
@@ -34,7 +36,7 @@ export class EducationComponent implements OnInit {
   ) { }
 
   async ngOnInit() {
-    this.education = await this.dataApi.getEducation();
+    this.dataApi.getEducation().subscribe(res => this.education = res);
   }
 
 }

@@ -20,7 +20,7 @@ export class ProjectsComponent implements OnInit {
 
 
   async ngOnInit(): Promise<void> {
-    this.projects = await this.dataApi.getFeaturedProjects();
+    this.dataApi.getFeaturedProjects().subscribe(res => this.projects = res);
   }
 
   filterProjects(tag: string) {

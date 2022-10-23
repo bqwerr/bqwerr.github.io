@@ -23,14 +23,8 @@ export class HomeComponent implements OnInit {
 
 
   async ngOnInit(): Promise<void> {
-
-    this.skills = await this.dataApi.getTopSkills();
-
-    this.workExperience = await this.dataApi.getWorkHistory();
-
-    this.education = await this.dataApi.getEducation();
-
-    this.profile = await this.dataApi.getProfile();
+    this.dataApi.getTopSkills().subscribe(res => this.skills = res);
+    this.dataApi.getProfile().subscribe(res => this.profile = res);
 
   }
 

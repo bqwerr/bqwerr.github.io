@@ -1,28 +1,26 @@
 <br />
-<ion-card style="height: 90%;">
+<ion-card style="height: 180px;" >
     <ion-card-content>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-3">
-
+                    
                     <h1 class="avatar-box">
                         <img src="./assets/images/my-avatar.png" alt="Srujan Tumma">
                     </h1>
-
                 </div>
                 <div class="col-8">
                     <h1 class="text-dark pb-2" title="Srujan Tumma">Srujan Tumma</h1>
                     <p>Software Engineering Associate at Hitachi Vantara</p>
                 </div>
             </div>
-            <div class="separator"></div>
-            <div>
+            <div class="row pt-4">
                 <ul class="contacts-list">
 
                     <li class="contact-item" *ngFor="let social of profile?.socials">
 
                         <div class="icon-box">
-                            <a>
+                            <a [href]="social?.link" class="noHref" [title]="social?.name" target="_blank">
                                 <ion-icon [name]="social?.icon"></ion-icon>
                             </a>
                         </div>
@@ -55,8 +53,6 @@
                 </ul> -->
 
             </div>
-            <div class="separator"></div>
-            <div class="separator"></div>
             <!-- <div class="col">
                 <iframe width="200%" height="200%" frameBorder="0"
                     src="https://github-readme-stats.vercel.app/api/top-langs/?username=bqwerr&layout=compact&langs_count=10"></iframe>

@@ -34,7 +34,7 @@ export class ExperienceComponent implements OnInit {
   ) { }
 
   async ngOnInit() {
-    this.experience = await this.dataApi.getWorkHistory();
+    this.dataApi.getWorkHistory().subscribe(res => this.experience = res);
   }
 
 }
