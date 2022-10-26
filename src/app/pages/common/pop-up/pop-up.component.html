@@ -17,7 +17,7 @@
 
       <div class="row">
         <div class="col-8">
-          <a [href]="project?.readme" *ngIf="project?.readme.length > 0">
+          <a [href]="project?.readme" *ngIf="project?.readme.length > 0" target="_blank">
             <h4 class="h4">{{ project?.title }}</h4>
           </a>
         </div>
@@ -29,7 +29,7 @@
         <p>
           {{project?.description}}
         </p>
-        <br />
+        <br/>
         <ul>
           <li *ngFor="let item of project?.items">
             {{item}}
@@ -37,10 +37,9 @@
         </ul>
         <br />
         <strong>
-          <h5>Technologies Used</h5>
+          <h5 >Technologies Used</h5>
         </strong>
         <a class="mr-1 rh-skill" *ngFor="let tag of project?.tags">{{tag}}</a>
-        <br />
       </div>
 
     </div>

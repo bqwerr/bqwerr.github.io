@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   profile: any;
 
   constructor(
-    public dataApi: DataApiService,
+    private dataApi: DataApiService,
   ) { }
 
 

@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
 
   id: string;
-  readonly headerItems: Array<string> = ['About', 'Education', 'Experience', 'Projects', 'Skills', 'Reference']
+  readonly headerItems: Array<string> = ['About', 'Education', 'Experience', 'Projects', 'Skills']
 
   constructor(
     private router: Router

@@ -32,7 +32,7 @@ export class EducationComponent implements OnInit {
   bookIcon: string = "book-sharp";
 
   constructor(
-    public dataApi: DataApiService,
+    private dataApi: DataApiService,
   ) { }
 
   async ngOnInit() {

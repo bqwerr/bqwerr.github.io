@@ -15,7 +15,7 @@ export class ProjectsComponent implements OnInit {
   readonly categories: Array<string> = ['All', 'Backend', "Machine Learning", "Full Stack"]
 
   constructor(
-    public dataApi: DataApiService,
+    private dataApi: DataApiService,
   ) { }
 
 

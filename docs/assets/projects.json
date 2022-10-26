@@ -4,10 +4,10 @@
       "icon": "./assets/images/project-1.jpg",
       "title": "Virtual Police Platform",
       "duration": "",
-      "tags": ["Full Stack Web Application", "SQLite", "Backend", "Django Web Framework", "Python"],
+      "tags": ["Full Stack Web Application", "SQLite", "Django Web Framework", "Python"],
       "readme": "https://bqwerr.github.io/city-desk",
       "repository": "https://github.com/bqwerr/city-desk",
-      "description": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididtconsectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
+      "description": "Web Application for Citizen & Police to manage raised requests in the portal. This application is built using Django Web Application Framework.",
       "items": [
         "Citizen can raise Compliants, NOC Requests, Appointment Requests",
         "Police can view latest requests in the dashboard",
@@ -19,22 +19,10 @@
     },
     {
       
-      "title": "To-Do List Application",
-      "icon": "./assets/images/project-1.jpg",
-      "tags": ["Django Web Framework", "Full Stack Web Application", "Python"],
-      "description": "A user specific to-do list application built using Django Web Application framework. ",
-      "readme": "https://bqwerr.github.io/to-do-list",
-      "repository": "https://github.com/bqwerr/to-do-list",
-      "duration": "June 2020",
-      "items": [""],
-      "demo": ""
-    },
-    {
-      
       "tags": ["ReactJS", "Full Stack Web Application"],
       "title": "Travel-Permissions Management Portal",
       "icon": "./assets/images/project-1.jpg",
-      "description": "",
+      "description": "The Portal has frontend components built using ReactJS. The main objective of this application is to create a user friendly dashboard for the travel admins, to view the applications raised by the users. This application consumes the backend API Travel Management Service to accept, reject and manage travel permissions.",
       "readme": "https://bqwerr.github.io/react-epass-portal",
       "repository": "https://github.com/bqwerr/react-epass-portal",
       "duration": "August 2020",
@@ -50,7 +38,7 @@
       "tags": ["Backend", "Spring Boot", "Java", "PostgreSQL"],
       "title": "Travel Management Service",
       "icon": "./assets/images/project-1.jpg",
-      "description": "",
+      "description": "This project is a Java backend API built using Spring Boot Framework for the frontend application - Travel Management Portal to accept, reject and manage the travel permissions raised by application users. Authentication and Authorization is secured by Json Web Tokens",
       "readme": "https://bqwerr.github.io/spring-epass-service",
       "repository": "https://github.com/bqwerr/spring-epass-service",
       "duration": "August 2020",
@@ -61,25 +49,15 @@
       ],
       "demo": "http://epass-service.herokuapp.com/api/posts/all"
     },
-    {
-     
-      "tags": ["Full Stack Web Application", "Angular", "TypeScript"],
-      "title": "Portfolio Website",
-      "icon": "./assets/images/project-1.jpg",
-      "description": "",
-      "readme": "https://bqwerr.github.io/",
-      "duration": "October 2022",
-      "items": [""],
-      "demo": "https://bqwerr.github.io"
-    },
+    
     {
       
       "tags": ["Machine Learning", "Full Stack Web Application", "Python", "SQLite"],
       "icon": "./assets/images/project-1.jpg",
       "title": "Image Retrieval System",
-      "description": "",
-      "readme": "https://bqwerr.github.io/face_recog",
-      "repository": "https://github.com/bqwerr/face_recog",
+      "description": "The objective of this project is to design a face recognition system for security control. Our system helps the police to detect events that might otherwise be overlooked or take a long time to detect manually.",
+      "readme": "https://bqwerr.github.io/Criminal-Record-Management-System",
+      "repository": "https://github.com/bqwerr/Criminal-Record-Management-System",
       "duration": "February 2021",
       "items": [
         "Built a content based Image retrieval system for Police to get criminal records of suspects.",
@@ -91,10 +69,10 @@
     },
     {
       
-      "tags": ["Backend", "Frontend", "Machine Learning", "Full Stack Web Application", "Python", "SQLite", "Django-Rest Framework", "ReactJS", "ChatBot"],
+      "tags": ["Machine Learning", "Full Stack Web Application", "Python", "SQLite", "Django-Rest Framework", "ReactJS", "ChatBot"],
       "icon": "./assets/images/project-1.jpg",
       "title": "Crime Awareness ChatBot",
-      "description": "",
+      "description": "The objective of this project is to create a chatbot that can be used to create awareness about the crimes, by fetching statistical data from the dataset. The chatbot will ask query about your problem and fetch the data based on the intents and entities recognized from the trained data. It can also help in registering compliants through chatbot. An interactive Map has been developed in the application to fetch nearby police stations and register an SOS.",
       "readme": "https://bqwerr.github.io/Crime-Awareness-Bot",
       "repository": "https://github.com/bqwerr/Crime-Awareness-Bot",
       "duration": "May 2021",

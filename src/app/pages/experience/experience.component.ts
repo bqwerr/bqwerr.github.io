@@ -30,7 +30,7 @@ export class ExperienceComponent implements OnInit {
   workIcon: string = "people-sharp";
 
   constructor(
-    public dataApi: DataApiService,
+    private dataApi: DataApiService,
   ) { }
 
   async ngOnInit() {
