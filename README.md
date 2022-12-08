@@ -1,2 +1,4 @@
-# bqwerr.github.io
-My Profile !!
+# Portfolio
+
+Portfolio application built while learning Angular.
+
