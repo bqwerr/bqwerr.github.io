@@ -25,7 +25,7 @@ export class AboutComponent implements OnInit {
   }
 
   showAbout() {
-    return !((this.url == '/about') || (this.url == '/') || (this.url == '/skills'));
+    return !((this.url == '/about') || (this.url == '/'));
   }
 
 }

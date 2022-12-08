@@ -3,36 +3,28 @@
   "timeline": [
     {
       "duration": "June 2021 - Present",
-      "title": "Software Engineer, Associate",
+      "title": "Software Engineering, Associate",
       "place": "Hitachi Vantara",
-      "description": "Conduct Work in developing cross-platform mobile applications (iOS and Android) as well as Backend applications. \n\nWe mainly develop using Agile over two-week sprints.",
+      "description": "Designing & Developing Enterprise Solutions using a combination of SAP Technologies and Platforms. Collaborating with Functional & Business Analysts to gather requirements, fixing bugs, and validating solutions against the business requirements.",
       "tags": [
-        "Ionic",
+        "SAP ERP - Human Resources",
+        "SAP ERP - Project Systems",
+        "Core Data Servies",
+        "SAP HANA Database",
+        "SQL",
+        "ABAP Programming",
+        "XML",
         "Angular",
-        "Node.js",
-        "npm",
-        "Git",
-        "Bitbucket",
-        "GitHub",
-        "Agile",
-        "Laravel",
-        "Express.js",
-        "Azure",
-        "Cosmos DB",
-        "JavaScript",
-        "TypeScript"
+        "Python"
       ]
     },
     {
       "duration": "February 2021 - May 2021",
       "title": "Project Intern",
       "place": "Hitachi Vantara",
-      "description": "I worked in a team of students focussing on projects centred around applications development, robotics, machine learning and designing courses to teach other students about these applications of technology.",
-      "tags": [
-        "Python",
-        "Linux",
-        "Angular",
-        "Ionic"
+      "description": "During my Internship, I worked with Senior Engineers focusing on a project centered around Full Stack Web Application Development. I have developed custom UI5 frontend components and explored ways to visualize data at the web interface using OData APIs & JavaScript.",
+       "tags": [
+        "SAP ERP", "SAP UI5", "OData REST APIs", "JavaScript", "jQuery", "XML"
       ]
     }
   ]

@@ -11,7 +11,7 @@
    left: 1;
    padding-top: 4%;
    width: 100%;
-   height: 100%;
+   /* height: 100%; */
    display: flex;
    justify-content: center;
    overflow-y: auto;
@@ -33,7 +33,7 @@
    top: 0;
    left: 0;
    width: 100%;
-   height: 100vh;
+   height: 100%;
    background: hsl(0, 0%, 5%);
    opacity: 0;
    visibility: hidden;
@@ -90,7 +90,7 @@
  }
 
  .testimonials-modal {
-  height: 500px;
+  height: 85%;
   width: 780px;
 }
 

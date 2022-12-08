@@ -13,6 +13,7 @@ export class DataApiService {
   private projects$: Observable<any> = null;
   private experience$: Observable<any> = null;
   private education$: Observable<any> = null;
+  private certifications$: Observable<any> = null;
 
   constructor(
     private http: HttpClient
@@ -47,6 +48,12 @@ export class DataApiService {
     if (this.education$ == null)
       this.education$ = this.http.get('assets/education.json').pipe(shareReplay());
     return this.education$;
+  }
+
+  getCertifications(): Observable<any> {
+    if (this.certifications$ == null)
+      this.certifications$ = this.http.get('assets/certifications.json').pipe(shareReplay());
+    return this.certifications$;
   }
 
 }

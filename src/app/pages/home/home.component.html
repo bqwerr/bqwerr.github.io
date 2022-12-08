@@ -18,43 +18,7 @@
         </div>
 
         <div class="row mt-5">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header h5 align-items-center">
-                <div class="row">
-                  <div class="col">
-                    My Top Skills
-                  </div>
-                  <div class="col">
-                    <ul class="skills-list justify-content-end">
-                      <li class="filter-item" [ngClass]="{'tab-active': isSkillTabActive('All')}">
-                        <button (click)="setActiveCategory('All')">All</button>
-                      </li>
-                      <li class="filter-item" *ngFor="let category of skills?.skills"
-                        [ngClass]="{'tab-active': isSkillTabActive(category?.title)}">
-                        <button (click)="setActiveCategory(category?.title)">{{category?.title}}</button>
-                      </li>
-                    </ul> 
-                  </div>
-                </div>
-              </div>
-              <div class="card-body" >
-                <div class="container" >
-                  <div class="row pb-2">
-                    <!-- <div class="col-lg-6 col-12">
-                      <iframe width="100%" height="110%" frameBorder="0"
-                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=bqwerr&layout=compact&langs_count=10"></iframe>
-                    </div> -->
-                    <div class="col-12">
-                      <ng-container *ngFor="let category of getActiveCategory()">
-                        <a class="mr-1 rh-skill" *ngFor="let skill of category?.tags">{{skill}}</a>
-                      </ng-container>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <app-top-skills></app-top-skills>
         </div>
       </div>
     </div>

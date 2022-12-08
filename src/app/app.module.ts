@@ -18,6 +18,8 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { IonicModule } from '@ionic/angular';
 import { PopUpComponent } from './pages/common/pop-up/pop-up.component';
 import { SafePipe } from './pipes/safe.pipe';
+import { SkillsComponent } from './pages/skills/skills.component';
+import { TopSkillsComponent } from './pages/common/top-skills/top-skills.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { SafePipe } from './pipes/safe.pipe';
     ProjectsComponent,
     LoginComponent,
     PopUpComponent,
-    SafePipe
+    SafePipe,
+    SkillsComponent,
+    TopSkillsComponent
   ],
   imports: [
     BrowserModule,

@@ -27,7 +27,8 @@
         "Git",
         "Heroku Cloud Platform",
         "SAP Cloud Platform",
-        "SAP ERP"
+        "SAP ERP - Human Resources",
+        "SAP ERP - Project Systems"
       ]
     },
     {
@@ -38,7 +39,8 @@
         "Object-Oriented Programming",
         "Web Technologies",
         "Operating Systems",
-        "Database Systems"
+        "Database Systems",
+        "Compiler Design"
       ]
     }
   ]
