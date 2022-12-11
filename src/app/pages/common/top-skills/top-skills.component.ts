@@ -24,8 +24,8 @@ export class TopSkillsComponent implements OnInit {
   }
 
   getActiveCategory() {
-    if (this.activeSkillTab == 'All') return this.skills.skills;
-    return this.skills.skills.filter((obj: any) => {
+    if (this.activeSkillTab == 'All') return this.skills?.skills;
+    return this.skills?.skills.filter((obj: any) => {
       let title = obj.title;
       return title.includes(this.activeSkillTab); 
     });

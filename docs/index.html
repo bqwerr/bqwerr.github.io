@@ -9,7 +9,26 @@
 
 <body>
   <app-root></app-root>
-<script src="runtime.c50526f183e9be990459.js" defer></script><script src="polyfills.4c2ad8efa3f900c0d86d.js" defer></script><script src="main.9952dd2fce98b397285e.js" defer></script>
+<script src="runtime.c50526f183e9be990459.js" defer></script><script src="polyfills.4c2ad8efa3f900c0d86d.js" defer></script><script src="main.b1d8365c706d66b8870f.js" defer></script>
 <script src="//code.tidio.co/w1rzb7vk5aivq4c1nwjfdyghtq8xlycx.js" async=""></script>
+<script>
+
+  <!-- Github Pages/build ouput hack to allow SPA refresh without receiving 404. -->
+
+
+  // Retrieve the URL the user was trying to access when receiving the 404.
+  var redirect = sessionStorage.redirect;
+  // Remove the URL from sessionStorage.
+  delete sessionStorage.redirect;
+
+  // Check if we actually need to redirect.
+  if (redirect && redirect != location.href) {
+    // We need to redirect to the URL the user was trying to access.
+    history.replaceState(null, null, redirect);
+  }
+
+  document.body.style.zoom = "100%";
+
+</script>
 
 </body></html>
