@@ -23,7 +23,7 @@
           </div>
 
           <div class="row">
-            <ul class="project-list">
+            <ul class="project-list" *ngIf="getActiveProjects() != null; else loadingDiv">
               <li class="project-item  active" *ngFor="let project of getActiveProjects()">
                 <a (click)="showProjectDetails(project)">
 
@@ -40,6 +40,10 @@
                 </a>
               </li>
             </ul>
+            <ng-template #loadingDiv>
+              <br />
+              Loading...
+            </ng-template>
           </div>
         </div>
       </div>
