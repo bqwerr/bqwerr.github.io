@@ -13,8 +13,9 @@
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navigation">
                 <ul class="navbar-nav mt-auto text-white">
-                    <li class="nav-link" *ngFor="let item of headerItems" style="cursor: pointer;">
-                        <span class="smooth-scroll" 
+                    <li class="nav-link" *ngFor="let item of headerItems" >
+                        <span
+                        style="cursor: pointer;"
                         [ngClass]="{'navbar-active': isActive('/' + item.toLowerCase())}"
                         [routerLink]="'/'+item.toLowerCase()">{{item}}</span>
                     </li>

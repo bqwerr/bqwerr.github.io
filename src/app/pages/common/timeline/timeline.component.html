@@ -1,4 +1,4 @@
-<section class="timeline">
+<section class="timeline" *ngIf="details != null; else loadingDiv">
 
   <div class="title-wrapper">
     <div class="icon-box">
@@ -37,3 +37,8 @@
   </ol>
 
 </section>
+
+<ng-template #loadingDiv>
+  <br />
+  Loading...
+</ng-template>
