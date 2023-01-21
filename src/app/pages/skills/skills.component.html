@@ -6,19 +6,24 @@
     </div>
     <div class="col-8">
       <div class="row mt-3">
-        <div class="col-11 offset-1">
+        <div class="col-11 offset-1" >
           <app-top-skills></app-top-skills>
         </div>
       </div>
       <br />
       <div class="row mt-2">
         <div class="col-11 offset-1">
-          <h3>Certifications</h3>
-          <ul>
-            <li *ngFor="let certification of certifications?.certifications">
-              <a href="{{certification?.link}}" target="_blank">{{certification?.name}}</a>
-            </li>
-          </ul>
+          <div *ngIf="certifications != null; else loadingDiv">
+            <h3>Certifications</h3>
+            <ul>
+              <li *ngFor="let certification of certifications?.certifications">
+                <a href="{{certification?.link}}" target="_blank">{{certification?.name}}</a>
+              </li>
+            </ul>
+          </div>
+          <ng-template #loadingDiv>
+            <p>Loading...</p>
+          </ng-template>
         </div>
       </div>
     </div>
