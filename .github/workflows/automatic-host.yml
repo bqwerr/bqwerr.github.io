@@ -22,7 +22,7 @@ jobs:
         git reset
         git add docs/*
         git add CNAME
-        git mv docs/* docs/* -k
+        git mv docs docs -k
         git mv CNAME ./docs/CNAME
         git commit -m "Update Version"
     - uses: ad-m/github-push-action@master
