@@ -1,0 +1,30 @@
+name: AutomaticHost
+on:
+  push:
+    branches: 
+      - develop
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - run: |
+        npm ci
+        npm run build
+    - run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git checkout --orphan gh-pages 
+        git reset
+        git add docs/*
+        git add CNAME
+        git mv docs/* ./ -k
+        git commit -m "Update hosted version"
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true
+        branch: gh-pages
