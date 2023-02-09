@@ -13,6 +13,7 @@ jobs:
         node-version: '18.3.0'
     - run: |
         npm ci
+        npm audit fix --force
         npm run build
     - run: |
         git config --local user.email "action@github.com"
