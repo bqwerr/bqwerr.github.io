@@ -2,7 +2,7 @@ name: Automatic Host
 on:
   push:
     branches: 
-      - dev
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
