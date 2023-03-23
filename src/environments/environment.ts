@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  googleTagTrackingID: process.env.NG_APP_GTAG_TRACKING_ID,
+  environmentName: process.env.NG_APP_ENVIRONMENT
 };
 
 /*

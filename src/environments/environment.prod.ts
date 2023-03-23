@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  googleTagTrackingID: process.env.NG_APP_GTAG_TRACKING_ID,
+  environmentName: process.env.NG_APP_ENVIRONMENT
 };
