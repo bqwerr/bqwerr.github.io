@@ -5,9 +5,6 @@ on:
       - main
 jobs:
   build:
-    env:
-      NG_APP_GTAG_TRACKING_ID: ${{ secrets.NG_APP_GTAG_TRACKING_ID }}
-      NG_APP_ENVIRONMENT: ${{ secrets.NG_APP_ENVIRONMENT }}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -17,7 +14,11 @@ jobs:
     - run: |
         npm ci
         npm audit fix --force
+        touch .env
+        echo NG_APP_GTAG_TRACKING_ID=${{ secrets.NG_APP_GTAG_TRACKING_ID }} >> .env
+        echo NG_APP_ENVIRONMENT=${{ secrets.NG_APP_ENVIRONMENT }} >> .env
         npm run build
+        rm .env
     - run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
