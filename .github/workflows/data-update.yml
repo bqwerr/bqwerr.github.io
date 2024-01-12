@@ -22,7 +22,13 @@ jobs:
       - name: Update Data
         run: |
           # Your update script command
-          curl -o ./src/assets/test_backend.json ${{ secrets.BACKEND_HOST }}api/portfolio/profile/bqwerr
+          curl -o ./src/assets/profile.json ${{ secrets.BACKEND_HOST }}api/portfolio/profile/bqwerr
+          curl -o ./src/assets/certifications.json ${{ secrets.BACKEND_HOST }}api/portfolio/certifications/bqwerr
+          curl -o ./src/assets/education.json ${{ secrets.BACKEND_HOST }}api/portfolio/education/bqwerr
+          curl -o ./src/assets/projects.json ${{ secrets.BACKEND_HOST }}api/portfolio/projects/bqwerr
+          curl -o ./src/assets/top-skills.json ${{ secrets.BACKEND_HOST }}api/portfolio/skills/bqwerr
+          curl -o ./src/assets/work-experience.json ${{ secrets.BACKEND_HOST }}api/portfolio/experience/bqwerr
+
 
       - name: Configure Git
         run: |
