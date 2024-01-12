@@ -22,21 +22,31 @@ jobs:
       - name: Update Data
         run: |
           # Your update script command
-          # Replace this with the actual command to update data from the backend
-
           curl -o ./src/assets/test_backend.json ${{ secrets.BACKEND_HOST }}api/portfolio/profile/bqwerr
 
-      - name: Commit and Push Changes
+      - name: Configure Git
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
-        
+
+      - name: Commit and Push Changes
+        run: |
           BRANCH_NAME=update-data-branch
 
-          git checkout -b $BRANCH_NAME
+          # Check if the branch exists locally
+          if git rev-parse --verify $BRANCH_NAME; then
+            git checkout $BRANCH_NAME
+          else
+            # If the branch doesn't exist locally, create and checkout
+            git checkout -b $BRANCH_NAME
+          fi
+
           git add .
           git commit -m "Update data from backend"
           git push origin $BRANCH_NAME
 
+          # Create a pull request
+          gh pr create --base main --head $BRANCH_NAME --title "Automated Data Update" --body "This pull request is automatically created to update data from the backend."
+
 env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
