@@ -1,7 +1,8 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { shareReplay } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +15,7 @@ export class DataApiService {
   private experience$: Observable<any> = null;
   private education$: Observable<any> = null;
   private certifications$: Observable<any> = null;
+  private backendHost: string = environment.backendHost;
 
   constructor(
     private http: HttpClient

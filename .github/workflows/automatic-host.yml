@@ -17,6 +17,7 @@ jobs:
         touch .env
         echo NG_APP_GTAG_TRACKING_ID=${{ secrets.NG_APP_GTAG_TRACKING_ID }} >> .env
         echo NG_APP_ENVIRONMENT=${{ secrets.NG_APP_ENVIRONMENT }} >> .env
+        echo BACKEND_HOST=${{ secrets.BACKEND_HOST }} >> .env
         npm run build
         rm .env
     - run: |

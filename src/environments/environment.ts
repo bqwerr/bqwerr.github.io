@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   googleTagTrackingID: process.env.NG_APP_GTAG_TRACKING_ID,
-  environmentName: process.env.NG_APP_ENVIRONMENT
+  environmentName: process.env.NG_APP_ENVIRONMENT,
+  backendHost: "http://localhost:8080/"
 };
 
 /*

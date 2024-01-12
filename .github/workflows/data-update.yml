@@ -1,0 +1,39 @@
+name: Update Data Workflow
+
+on:
+  repository_dispatch:
+    types: 
+      - backend-event
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+
+      - name: Update Data
+        run: |
+          # Your update script command
+          # Replace this with the actual command to update data from the backend
+
+          curl -o ./src/assets/test_backend.json ${{ secrets.BACKEND_HOST }}api/portfolio/profile/bqwerr
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+
+          git add .
+          git commit -m "Update data from backend"
+          git push origin main
+
+env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
