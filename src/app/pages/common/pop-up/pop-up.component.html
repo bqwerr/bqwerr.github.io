@@ -31,7 +31,7 @@
         <br/>
         <ul>
           <li *ngFor="let item of project?.items">
-            {{item}}
+            <div [innerHTML]="item | safe: 'html'"></div>
           </li>
         </ul>
         <br />

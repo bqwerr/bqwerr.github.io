@@ -1,1 +1,48 @@
-{"skills":[{"title":"Backend","tags":["Java","Python","SQL","Spring Boot","JSP & Servlets","Django Framework","Django Rest Framework","SAP ABAP"]},{"title":"Frontend","tags":["Angular","React JS","SAPUI5"]},{"title":"Tools","tags":["Git","Heroku Cloud Platform","SAP Cloud Platform","SAP ERP - Human Resources","SAP ERP - Project Systems"]},{"title":"Coursework","tags":["Data Structures","Algorithms","Object-Oriented Programming","Web Technologies","Operating Systems","Database Systems","Compiler Design"]}]}
+{
+    "skills": [
+        {
+            "title": "Backend",
+            "tags": [
+                "Java",
+                "Python",
+                "SQL",
+                "Spring Boot",
+                "JSP & Servlets",
+                "Django Framework",
+                "Django Rest Framework",
+                "SAP ABAP"
+            ]
+        },
+        {
+            "title": "Frontend",
+            "tags": [
+                "Flutter",
+                "Angular",
+                "React JS",
+                "SAPUI5"
+            ]
+        },
+        {
+            "title": "Tools",
+            "tags": [
+                "Git",
+                "Heroku Cloud Platform",
+                "SAP Cloud Platform",
+                "SAP ERP - Human Resources",
+                "SAP ERP - Project Systems"
+            ]
+        },
+        {
+            "title": "Coursework",
+            "tags": [
+                "Data Structures",
+                "Algorithms",
+                "Object-Oriented Programming",
+                "Web Technologies",
+                "Operating Systems",
+                "Database Systems",
+                "Compiler Design"
+            ]
+        }
+    ]
+}
