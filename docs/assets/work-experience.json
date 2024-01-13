@@ -1,0 +1,53 @@
+{
+    "id": "64780a1d55fd2665e1f6adbd",
+    "userName": "bqwerr",
+    "title": "Professional Experience",
+    "timeline": [
+        {
+            "title": "Technical Consultant",
+            "duration": "June 2023 - Present",
+            "place": "Hitachi Vantara",
+            "description": "Driving discussions for requirement analysis, technical feasibility checks, and actively involve in designing and implementing solutions to meet the demands of new SAP enhancement requests.",
+            "tags": [
+                "SAP Cloud Platform",
+                "Java",
+                "SAP ERP - Human Resources",
+                "SAP ERP - Project Systems",
+                "Core Data Servies",
+                "SAP HANA Database",
+                "SQL",
+                "ABAP Programming",
+                "XML"
+            ]
+        },
+        {
+            "title": "Associate",
+            "duration": "June 2021 - Present",
+            "place": "Hitachi Vantara",
+            "description": "Designing & Developing Enterprise Solutions using a combination of SAP Technologies and Platforms. Collaborating with Functional & Business Analysts to gather requirements, fixing bugs, and validating solutions against the business requirements.",
+            "tags": [
+                "SAP ERP - Human Resources",
+                "SAP ERP - Project Systems",
+                "SQL",
+                "ABAP Programming",
+                "XML",
+                "Angular",
+                "Python"
+            ]
+        },
+        {
+            "title": "Project Intern",
+            "duration": "February 2021 - May 2021",
+            "place": "Hitachi Vantara",
+            "description": "During my Internship, I worked with Senior Engineers focusing on a project centered around Full Stack Web Application Development. I have developed custom UI5 frontend components and explored ways to visualize data at the web interface using OData APIs & JavaScript.",
+            "tags": [
+                "SAP ERP",
+                "SAP UI5",
+                "OData REST APIs",
+                "JavaScript",
+                "jQuery",
+                "XML"
+            ]
+        }
+    ]
+}
