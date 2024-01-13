@@ -39,7 +39,7 @@ jobs:
         run: |
           git fetch origin main
 
-      - name: Merge main into update-data-branch
+      - name: Commit and Push
         run: |
           BRANCH_NAME=update-data-branch
 
@@ -51,7 +51,8 @@ jobs:
             git checkout -b $BRANCH_NAME
           fi
 
-          git pull origin main
+          git add .
+          git commit -m "Update Data from Backend"
           git push origin $BRANCH_NAME
 
           # Create a pull request
